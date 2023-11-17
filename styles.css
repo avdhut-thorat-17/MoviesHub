@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #131725;
+    font-family: sans-serif;
+}
+.navbar-container {
+    background: transparent; /* Initial transparent background */
+    transition: background 0.5s ease; /* Smooth transition effect */
+    /* margin-top: 9px; */
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    height: 86px;
+    width: 1190px;
+    position: relative;
+}
+
+/* Add styles for the not-first-page background color */
+body.not-first-page {
+    background: #333; /* Change to your desired grey color */
+  }
+  
+.root1{
+    padding: 0 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("back.png");
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+
+}  
+  /* Add styles for the first page background color
+ .first-page {
+      /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("back.png");
+      background-size: cover;
+      background-position: center; */
+  
+  
+
+.navbar-sticky {
+    background: #535353; /* Grey background for sticky navbar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    /* Other styles for your sticky navbar */
+}
+
+.logo-container {
+    height: 71px;
+    width: 234px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 32.96px;
+    width: 219px;
+    float:left;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-container {
+    margin-left: 75px;
+    margin-right: 10px;
+}
+
+.links-container ul {
+    display: flex;
+    list-style-type: none; /* Remove bullet points */
+}
+
+.links-container ul li {
+    margin-left: 20px;
+}
+
+.links-container ul li a {
+    text-decoration: none;
+    font-size: .9rem;
+    color: #afafaf; /* Set the link color */
+}
+
+.links-container ul li a:hover{
+    color: white;
+}
+
+.searchbar-container {
+    background-color: #474747;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.searchbar-container img {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.searchbar-container form {
+    border-radius: 10px;
+    background-color:  #535353;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 490px;
+}
+
+.searchbar-container form input {
+    border: none;
+    border-radius: 5px; /* You can adjust this value */
+    box-sizing: border-box;
+    height: 38px;
+    width: 100%;
+    padding: 0 10px;
+    background-color: #535353;
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar-button {
+    height: 45px;
+    width: 70px;
+}
+
+.navbar-button button {
+    background-color: #474747; /* Set the button background color */
+    color: #cacaca; /* Set the button text color */
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Make the button take 100% width of its container */
+    height: 100%; /* Make the button take 100% height of its container */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    font-size: 14px; /* Set the font size */
+    margin-left: 5px;
+}
+
+/* Optional: Add hover effect */
+.navbar-button button:hover {
+    background-color: #a1a1a1;
+    color: #535353;
+}
+
+
+
+/* hero section */----------------------------------------------------------
+
+
+/* Add these styles to center the hero section text */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height of the hero section to the full viewport height */
+}
+
+.hero-section .hero-text {
+    margin-top: 100px;
+    text-align: center;
+    color: white; /* Set the text color */
+}
+
+.hero-section .hero-text .main-txt{
+
+    margin-bottom: 20px; /* Adjust spacing between lines */
+}
+
+.hero-section .hero-text .main-txt span {
+    font-size: 3.5rem; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+}
+
+.hero-section .hero-text .sub-txt{
+    margin-bottom: 40px;
+}
+
+.hero-section .hero-text .sub-txt span {
+    font-size: 1.2rem; /* Set the font size for the subtext */
+    color: #7c7b7b;
+}
+
+.hero-section .hero-text .btns{
+    margin-bottom: 110px;
+}
+
+.hero-section .hero-text .btns #btn1{
+    background-color: rgb(173, 114, 3);
+    color: #cacaca;
+    border: none;
+    cursor: pointer;
+    height: 55px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.hero-section .hero-text .btns #btn2{
+    background-color: #474747;
+    color: #cacaca;
+    border: none;
+    cursor: pointer;
+    height: 55px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Optional: Add hover effect for buttons */
+.hero-section .hero-text .btns #btn1:hover {
+    background-color: #a1a1a1;
+    color: #474747;
+}
+.hero-section .hero-text .btns #btn2:hover {
+    color: #a1a1a1;
+    background-color: rgb(173, 114, 3);
+}
+
+/* -----------------root2----------------------- */
+
+.discover-section{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+
+.discover-section span{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.root2{
+    display: flex;
+    flex-direction: column;
+}
+.more-platforms {
+    margin-top: 3%;
+    margin-left: 10%;
+    display: flex;
+}
+  
+.more-platforms img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 65px;
+    border-radius: 20px;
+
+}
+  
+.movies-section{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+
+.movies-section span{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.carouseul{
+    margin-left: 5%;
+    margin-top: 3%;
+    display: flex;
+}
+
+.carouseul img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 25px;
+    border-radius: 20px;
+}
+
+/* --------------------Footer --------------------------
+ */
+
+
+ .hidden {
+    display: none;
+  }
+  
+  .footer-gray {
+    margin-top: 3%;
+    background-color: #131725;
+    width: 100%;
+  }
+  
+  .footer-custom {
+    color: #ffffff;
+    font: normal normal 12px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    max-width: 1008px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  .footer-custom:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  .footer-lists:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  .ftr-hdr {
+    color: #9b9b9b;
+    font: 22px/1.4 'BebasNeueRegular', BebasNeue, 'Bebas Neue', Arial, sans-serif;
+    margin: 1em 0 0;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .ftr-hdr {
+      font-size: 18px;
+    }
+  }
+  
+  .footer-list-wrap {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+  }
+  
+  @media only screen and (min-width: 568px) {
+    .footer-list-wrap {
+      width: 33.3333%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .footer-list-wrap {
+      width: 25%;
+    }
+  }
+  
+  .ftr-links-sub {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .ftr-links-sub:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  .ftr-links-sub li {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 3px 0;
+    color: #888;
+    font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-transform: uppercase;
+    /*width: 150px;*/
+  }
+  
+  .footer-custom a,
+  .footer-custom a:link,
+  .footer-custom a:visited,
+  .ftr-links-sub li .link {
+    text-decoration: none;
+    color: #888;
+    padding: 5px 0;
+    display: block;
+  }
+  
+  .footer-custom .footer-legal a {
+    display: inline;
+  }
+  
+  .footer-custom a:hover,
+  .footer-custom a:active,
+  .ftr-links-sub li .link:hover {
+    text-decoration: underline;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .footer-custom a, .footer-custom a:link, .footer-custom a:visited, .ftr-links-sub li .link {
+      padding: 0;
+    }
+  }
+  /* BEGIN EMAIL CAPTURE STYLES*/
+  
+  .footer-email {
+    text-align: center;
+  }
+  
+  #ftrEmailForm {
+    height: 44px;
+  }
+  
+  #ftrEmailForm .error {
+    display: none;
+    color: red;
+    text-align: left;
+  }
+  
+  #ftrEmailForm #ftrEmailInput {
+    background: none repeat scroll 0 0 #FFF;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    color: #888;
+    float: left;
+    font: normal normal 14px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding: 5px;
+    width: 70%;
+    height: 100%;
+  }
+  
+  #ftrEmailForm #ftrEmailInput:hover {
+    border: 1px solid #888;
+  }
+  
+  #ftrEmailForm #ftrEmailInput:focus {
+    border: 1px solid #ef9223;
+    outline: #ef9223 auto 5px;
+  }
+  
+  #ftrEmailForm .button {
+    width: 30%;
+    height: 100%;
+    padding: 5px;
+    float: left;
+    border: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    color: #000;
+    font: normal bold 18px/1 BebasFamily, BebasNeueRegular, "Bebas Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background: #FFF;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e1e1e1));
+    background: -webkit-linear-gradient(top, white 0, #e1e1e1 100%);
+    background: -moz-linear-gradient(top, white 0, #e1e1e1 100%);
+    background: -ms-linear-gradient(top, white 0, #e1e1e1 100%);
+    background: -o-linear-gradient(top, white 0, #e1e1e1 100%);
+    background: linear-gradient(to bottom, white 0, #e1e1e1 100%);
+    cursor: pointer;
+    vertical-align: middle;
+    outline: none;
+  }
+  
+  #ftrEmailForm .button:hover,
+  #ftrEmailForm .button:active {
+    background: black;
+    color: #FFF;
+    outline: none;
+  }
+  /* BEGIN SOCIAL STYLES*/
+  
+  .footer-social {
+    text-align: center;
+  }
+  
+  .footer-social ul {
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .footer-social ul:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  .footer-social li {
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 0;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .footer-lists {
+      width: 100%;
+    }
+    .footer-email {
+      width: 50%;
+      float: left;
+      text-align: left;
+    }
+    .footer-social {
+      width: 45%;
+      margin-left: 5%;
+      float: left;
+      text-align: left;
+    }
+  }
+  
+  @media only screen and (min-width: 1008px) {
+    .footer-lists {
+      width: 66.6666%;
+      float: left;
+    }
+    .footer-email {
+      width: 33.3333%;
+    }
+    .footer-social {
+      width: 33.3333%;
+      float: right;
+      margin-left: 0;
+    }
+  }
+  
+  .footer-legal {
+    padding: 15px 0 0;
+    clear: left;
+  }
+  
+  .footer-payment {
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .footer-legal {
+      width: 66.6666%;
+      float: left;
+    }
+    .footer-payment {
+      width: 33.3333%;
+      float: left;
+    }
+  }
+  
+  @media only screen and (min-width: 1008px) {
+    .footer-payment {
+      text-align: left;
+    }
+  }
+  
+  .footer-payment ul {
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .footer-payment ul li {
+    display: inline-block;
+    margin: 0 6px;
+  }
+  
+  @media only screen and (min-width: 1008px) {
+    .footer-payment ul li.ftr-stella {
+      margin-left: 0;
+    }
+  }
+  
+  .ftr-bbb span,
+  .ftr-stella span {
+    background-image: url("http://cache1.artprintimages.com/images/jump_pages/rebrand2/images/subnav2.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ftr-bbb span {
+    background-position: -339px -8px;
+    width: 96px;
+  }
+  
+  .ftr-stella span {
+    background-position: -339px -107px;
+    width: 57px;
+  }
